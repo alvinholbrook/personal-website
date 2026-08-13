@@ -31,6 +31,16 @@ footer_links:
 # TODO: replace with your real contact email once decided
 contact_email: "you@example.com"
 
+# Files that exist for development/context but must never be published to the
+# live site (CLAUDE.md in particular contains sensitive background — do not
+# remove this exclusion).
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
 collections:
   stories:
     output: true
