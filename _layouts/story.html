@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="story">
+  <p class="story-back"><a href="{{ '/writing/' | relative_url }}">&larr; All writing</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="story-meta">
+    {% if page.publication %}{{ page.publication }}{% endif %}
+    {% if page.date %} · {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+  </p>
+  {% if page.dek %}<p class="story-dek">{{ page.dek }}</p>{% endif %}
+  {% if page.external_url %}
+    <p><a class="story-link" href="{{ page.external_url }}" target="_blank" rel="noopener">Read the full story &rarr;</a></p>
+  {% endif %}
+  <div class="story-body">
+    {{ content }}
+  </div>
+</article>

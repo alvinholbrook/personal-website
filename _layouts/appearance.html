@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="appearance">
+  <p class="story-back"><a href="{{ '/podcasts/' | relative_url }}">&larr; All appearances</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="story-meta">
+    {% if page.outlet %}{{ page.outlet }}{% endif %}
+    {% if page.date %} · {{ page.date | date: "%B %-d, %Y" }}{% endif %}
+  </p>
+  {% if page.embed_url %}
+  <div class="appearance-embed">
+    <iframe src="{{ page.embed_url }}" title="{{ page.title }}" allowfullscreen loading="lazy"></iframe>
+  </div>
+  {% endif %}
+  {% if page.external_url %}
+    <p><a class="story-link" href="{{ page.external_url }}" target="_blank" rel="noopener">Listen / watch &rarr;</a></p>
+  {% endif %}
+  <div class="story-body">
+    {{ content }}
+  </div>
+</article>

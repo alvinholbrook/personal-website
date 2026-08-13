@@ -1,0 +1,52 @@
+title: Alvin Holbrook
+description: "Writer & communications professional — stories, podcast appearances, and photography."
+url: "https://alvinholbrook.com"
+baseurl: ""
+
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Site-wide nav — edit labels/order here, not in each layout file
+nav:
+  - title: About
+    url: /
+  - title: Writing
+    url: /writing/
+  - title: Podcast Appearances
+    url: /podcasts/
+  - title: Photography
+    url: /photography/
+  - title: Contact
+    url: /contact/
+
+# Footer links — leave a URL blank ("") to hide that link
+footer_links:
+  linkedin: ""
+  twitter: ""
+  email: ""
+
+# TODO: replace with your real contact email once decided
+contact_email: "you@example.com"
+
+collections:
+  stories:
+    output: true
+    permalink: /writing/:path/
+  appearances:
+    output: true
+    permalink: /podcasts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: "story"
+  - scope:
+      path: ""
+      type: "appearances"
+    values:
+      layout: "appearance"
