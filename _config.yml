@@ -1,7 +1,11 @@
 title: Alvin Holbrook
 description: "Writer & communications professional — stories, podcast appearances, and photography."
-url: "https://alvinholbrook.com"
-baseurl: ""
+url: "https://alvinholbrook.github.io"
+# TODO: baseurl must be "" once alvinholbrook.com is live (custom domain serves
+# from root). While previewing at the github.io URL, it needs to match the repo
+# name so internal links/assets resolve correctly. Also change `url` above to
+# "https://alvinholbrook.com" at the same time.
+baseurl: "/personal-website"
 
 markdown: kramdown
 theme: null
