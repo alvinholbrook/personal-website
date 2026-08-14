@@ -10,3 +10,4 @@ vendor/
 # never be pushed to the public repo. See exclude list in _config.yml too
 # (belt-and-suspenders, but this is the file that actually matters).
 CLAUDE.md
+CONTENT-CANDIDATES.md
