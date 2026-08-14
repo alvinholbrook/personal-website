@@ -7,6 +7,31 @@
   --max-width: 800px;
 }
 
+/* Smooth cross-page nav transitions (progressive enhancement — browsers
+   without support just do a normal navigation, no fallback needed). Real,
+   separate URLs per page are preserved; this only changes how the browser
+   paints the swap. */
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation: site-fade-out 0.15s ease-out both;
+  }
+  ::view-transition-new(root) {
+    animation: site-fade-in 0.22s ease-in both;
+  }
+}
+
+@keyframes site-fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes site-fade-in {
+  from { opacity: 0; }
+}
+
 * { box-sizing: border-box; }
 
 body {

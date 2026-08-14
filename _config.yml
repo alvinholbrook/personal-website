@@ -32,6 +32,16 @@ footer_links:
   twitter: ""
   email: ""
 
+# Profile URLs that are really you, used for Person structured data (JSON-LD
+# "sameAs") so search engines tie this domain to your other legitimate
+# profiles as the same entity. Leave any entry blank ("") to omit it — only
+# non-blank URLs are emitted. Add more lines here (e.g. github, instagram) if
+# needed; the layout loops over whatever is in this list.
+sameAs:
+  - ""  # LinkedIn
+  - ""  # Muck Rack (muckrack.com/alvin-holbrook)
+  - ""  # Twitter/X
+
 # TODO: replace with your real contact email once decided
 contact_email: "you@example.com"
 
