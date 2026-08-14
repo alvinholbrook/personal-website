@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-build-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8932", "--directory", "/private/tmp/claude-501/-Users-alvinholbrook-claude-stuff-personal-website/9dae8700-47da-4bf8-8797-32c25b8a7e40/scratchpad/jekyll-test/serve-root"],
+      "port": 8932
+    }
+  ]
+}
