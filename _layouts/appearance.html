@@ -6,7 +6,6 @@ layout: default
   <h1>{{ page.title }}</h1>
   <p class="story-meta">
     {% if page.outlet %}{{ page.outlet }}{% endif %}
-    {% if page.date %} · {{ page.date | date: "%B %-d, %Y" }}{% endif %}
   </p>
   {% if page.embed_url %}
   <div class="appearance-embed">

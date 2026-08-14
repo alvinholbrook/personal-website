@@ -19,7 +19,6 @@ permalink: /writing/
     <a class="entry-title" href="{{ story.url | relative_url }}">{{ story.title }}</a>
     <span class="entry-meta">
       {% if story.publication %}{{ story.publication }}{% endif %}
-      {% if story.date %} · {{ story.date | date: "%B %Y" }}{% endif %}
     </span>
   </li>
   {% endfor %}

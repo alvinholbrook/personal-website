@@ -19,7 +19,6 @@ permalink: /podcasts/
     <a class="entry-title" href="{{ a.url | relative_url }}">{{ a.title }}</a>
     <span class="entry-meta">
       {% if a.outlet %}{{ a.outlet }}{% endif %}
-      {% if a.date %} · {{ a.date | date: "%B %Y" }}{% endif %}
     </span>
   </li>
   {% endfor %}
